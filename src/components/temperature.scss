@@ -9,12 +9,16 @@
   }
 
   &__title {
-    font-size: 36px;
     margin: 0 20px 0 0;
   }
 
+  &__number {
+    font-size: 1.4em;
+    margin-right: 10px;
+  }
+
   &__scale {
-    font-size: 30px;
+    font-size: 1.4em;
     text-transform: uppercase;
   }
 

@@ -8,17 +8,29 @@
   <title>Weather App</title>
 </head>
 <body>
-  <section class="location">
-    <h1 class="location__timezone">timezone</h1>
-    <p>icon</p>
-  </section>
-  <section class="temperature">
-    <div class="temperature__degree">
-      <h2 class="temperature__title">32</h2>
-      <span class="temperature__scale">&deg;f</span>
-    </div>
-    <div class="temperature__description">Its cold outside</div>
-  </section>
+  <div class="container">
+    <header class="header">
+      <h1 class="header__title">Simple Weather App</h1>
+      <p class="header__info"></p>
+    </header>
+    <main class="content">
+      <section class="location">
+        <h2 class="location__title">timezone:</h2>
+        <p class="location__timezone"></p>
+        <div class="location__icon">
+          <canvas class="icon" width="128" height="128"></canvas>
+        </div>
+      </section>
+      <section class="temperature">
+        <div class="temperature__degree">
+          <h2 class="temperature__title">temperature:</h2>
+          <span class="temperature__number"></span>
+          <span class="temperature__scale">&deg;f</span>
+        </div>
+        <div class="temperature__description">Its cold outside</div>
+      </section>
+    </main>
+  </div>
 
   <script src="build/js/main.js"></script>
 </body>

@@ -1,12 +1,29 @@
 .location {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'title icon'
+    'zone icon';
+  width: 100%;
   margin: 0 0 4rem;
 
+  &__title {
+    grid-area: title;
+    justify-self: end;
+  }
+
   &__timezone {
+    grid-area: zone;
+    justify-self: end;
     font-size: 44px;
-    margin: 0 20px 0 0;
+    margin: 0;
+  }
+
+  &__icon {
+    grid-area: icon;
   }
 }
