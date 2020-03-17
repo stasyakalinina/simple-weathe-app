@@ -3,23 +3,29 @@
   // align-items: center;
   // justify-content: space-between;
   display: grid;
+  grid-gap: 10px 50px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: min-content min-content;
   grid-template-areas:
     'title icon'
     'zone icon';
   width: 100%;
-  margin: 0 0 4rem;
+  margin: 0 0 2rem;
 
   &__title {
     grid-area: title;
     justify-self: end;
+    align-self: end;
+    margin: 0;
+    line-height: 1;
   }
 
   &__timezone {
     grid-area: zone;
     justify-self: end;
+    align-self: start;
     font-size: 44px;
+    line-height: 1;
     margin: 0;
   }
 

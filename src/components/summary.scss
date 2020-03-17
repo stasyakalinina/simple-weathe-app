@@ -1,4 +1,4 @@
-.temperature {
+.summary {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,13 +9,7 @@
     margin: 0 20px 0 0;
   }
 
-  &__number {
+  &__description {
     font-size: 1.4em;
-    margin-right: 10px;
-  }
-
-  &__scale {
-    font-size: 1.4em;
-    text-transform: uppercase;
   }
 }
